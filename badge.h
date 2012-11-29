@@ -1,6 +1,4 @@
-/*
-BETA MADE WITH NOTEPAD
-*/
+<?php
 
 @interface wdgBadge : NSObject {
     
@@ -10,14 +8,18 @@ BETA MADE WITH NOTEPAD
 - (void) reset;
 @end
 
-- (void)set:(NSString*)editremind {
+@implementation wdgBadge
 
-    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:[editremind intValue];
-
+- (void)set:(NSString*)editremind
+{    
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:[editremind intValue]];   
 }
 
-- (void)reset {
-
+- (void)reset
+{
     [[UIApplication sharedApplication] setApplicationIconBadgeNumber:0];
-
 }
+
+@end
+
+?>
