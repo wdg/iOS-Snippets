@@ -1,3 +1,13 @@
+//
+//  JSON
+//  "json to NSDictionary"
+//
+//  Created by wesley de groot on 19-01-13.
+//  Copyright (c) 2013 WDG.P. All rights reserved.
+//  http://www.wdgp.nl                info@wdgp.nl
+//
+//  Free for non-comercial use.
+
 // USAGE: 
 // NSDictionary * dic = [NSDictionary dictionaryWithContentsOfJSONURLString: [[NSString alloc] initWithFormat:@"%@", @"URL"]];
 

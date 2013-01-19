@@ -1,10 +1,11 @@
 //
-//  CheckInternetConnection.h
+//  check internet connection
 //
+//  Created by wesley de groot on 19-01-13.
+//  Copyright (c) 2013 WDG.P. All rights reserved.
+//  http://www.wdgp.nl                info@wdgp.nl
 //
-//  Created by wesley de groot on 11-09-12.
-//  Copyright (c) 2012 wesley de groot. All rights reserved.
-//
+//  Free for non-comercial use.
 
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
@@ -19,14 +20,6 @@
 + (BOOL) isConnected;
 
 @end
-
-//
-//  CheckInternetConnection.m
-//  
-//
-//  Created by wesley de groot on 11-09-12.
-//  Copyright (c) 2012 wesley de groot. All rights reserved.
-//
 
 @implementation CheckInternetConnection
 

@@ -1,4 +1,41 @@
 //
+//  Base64.h
+//  "Bas64 Strings"
+//
+//  !!Orginal code is not made by me.
+//  !!Fix for XCode warning. (orginal has warning on XCode)
+//
+//  Created by wesley de groot on 19-01-13.
+//  Copyright (c) 2013 WDG.P. All rights reserved.
+//  http://www.wdgp.nl                info@wdgp.nl
+//
+//  Free for non-comercial use.
+
+//
+//  NSStrinAdditions.h
+//  DynaMenu
+//
+//  Created by Sagar R Kothari on 12/7/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+//// This will load NeonSpark image &amp; *data* variable is holding data of image
+//NSData *data = [NSData dataWithContentsOfFile:
+//                [[NSBundle mainBundle] pathForResource:@"Neon Spark" ofType:@"png"]
+//                ];
+//// using base64StringFromData method, we are able to convert data to string
+//NSString *str = [NSString base64StringFromData:data length:[data length]];
+//
+//// log the base64 encoded string
+//NSLog(@"Base64 Encoded string is %@",str);
+//
+//// using base64DataFromString
+//NSData *dataFromBase64=[NSData base64DataFromString:str];
+//
+//// log the decoded NSData length
+//NSLog(@"Data length is %i",[dataFromBase64 length]);
+
+//
 //  NSStrinAdditions.h
 //  DynaMenu
 //
@@ -117,7 +154,7 @@ static char base64EncodingTable[64] = {
 + (NSData *)base64DataFromString: (NSString *)string
 {
     unsigned long ixtext, lentext;
-    unsigned char ch, inbuf[3], outbuf[4];
+    unsigned char ch, inbuf[4], outbuf[4];
     short i, ixinbuf;
     Boolean flignore, flendtext = false;
     const unsigned char *tempcstring;
